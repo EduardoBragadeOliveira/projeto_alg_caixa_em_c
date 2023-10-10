@@ -2,6 +2,7 @@
 #include "preencher_estoque.h"
 #include "consultar_estoque.h"
 #include "acoes_menu.h"
+#include "valores_compra.h"
 
 int estoque[10];
 
