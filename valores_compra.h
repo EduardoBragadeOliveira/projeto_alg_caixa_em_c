@@ -1,4 +1,8 @@
+extern int estoque[10];
+
 double valores_compra(int codigoProduto, int quantidadeProduto){
+    estoque[codigoProduto] -= quantidadeProduto;
+    
     switch (codigoProduto)
     {
     case 0:
