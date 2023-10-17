@@ -199,10 +199,9 @@ int acoes_menu(int escolhaAcaoMenu)
             do
             {
                 clienteSorteado = rand() % 10;
-                printf("%d", clienteSorteado);
             } while (crediario[clienteSorteado] == 0);
 
-            printf("Parabens ao cliente %d, que teve seu montante devedor de %.2f perdoado!\n", clienteSorteado, crediario[clienteSorteado]);
+            printf("Parabens ao cliente %d, que teve seu montante devedor de R$ %.2f perdoado!\n", clienteSorteado, crediario[clienteSorteado]);
 
             crediario[clienteSorteado] = 0.0;
         }
