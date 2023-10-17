@@ -20,12 +20,12 @@ void forma_de_pagamento(double valoresCompra, int formaDePagamento){
     case 4:
         do
         {
-            printf("Digite o código (0 - 9) do cliente: ");
+            printf("Digite o codigo (0 - 9) do cliente: ");
             scanf("%d", &codigoCliente);
         } while (codigoCliente < 0 || codigoCliente > 9);
         
         crediario[codigoCliente] += valoresCompra;
-        printf("O valor de R$ %.2lf foi adicionado no crediário do cliente %d, montante de R$ %.2lf\n", valoresCompra, codigoCliente, crediario[codigoCliente]);
+        printf("O valor de R$ %.2lf foi adicionado no crediario do cliente %d, montante de R$ %.2lf\n", valoresCompra, codigoCliente, crediario[codigoCliente]);
 
         break;
     

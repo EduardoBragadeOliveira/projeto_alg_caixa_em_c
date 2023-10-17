@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <locale.h>
 #include <stdlib.h>
 #include <time.h>
 #include "preencher_estoque.h"
@@ -14,18 +13,17 @@ double crediario[10];
 int main()
 {
     int exit = 0, escolhaAcaoMenu;
-    setlocale(LC_ALL, "Portuguese");
 
     do
     {
-        printf("\nBem-vindo ao EL Software 1.0");
-        printf("\n\nDigite 1 para a simulação de compra");
-        printf("\nDigite 2 para consultar os débitos de clientes do crediário");
-        printf("\nDigite 3 para preencher o estoque");
-        printf("\nDigite 4 para consultar o estoque");
-        printf("\nDigite 5 para pagar débitos de clientes do crediário");
-        printf("\nDigite 6 para sortear um cliente para perdoar dívida");
-        printf("\n\nDigite 0 para fechar o menu\n");
+        printf("\033[1;41m\nBem-vindo ao EL Software 1.0\033[m");
+        printf("\n\nDigite \033[1;41m1\033[m para a simulacao de compra");
+        printf("\nDigite \033[1;41m2\033[m para consultar os debitos de clientes do crediario");
+        printf("\nDigite \033[1;41m3\033[m para preencher o estoque");
+        printf("\nDigite \033[1;41m4\033[m para consultar o estoque");
+        printf("\nDigite \033[1;41m5\033[m para pagar debitos de clientes do crediario");
+        printf("\nDigite \033[1;41m6\033[m para sortear um cliente para perdoar divida");
+        printf("\n\nDigite \033[1;41m0\033[m para fechar o menu\n");
         printf("Escolha: ");
         scanf("%d", &escolhaAcaoMenu);
 
